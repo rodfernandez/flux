@@ -27,6 +27,8 @@ import MainSection from './MainSection.react';
 import React, {Component} from 'react';
 import TodoStore from '../flux-infra/TodoStore';
 
+import duration from '../telemetry/duration';
+
 type State = {
   todos: Immutable.Map<string, Todo>,
   areAllComplete: boolean,
@@ -44,6 +46,7 @@ class TodoApp extends Component<{}, {}, State> {
     };
   }
 
+  @duration
   render(): ?ReactElement {
     return (
       <div>

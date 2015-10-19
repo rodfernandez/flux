@@ -30,7 +30,12 @@
   "author": "Kyle Davis",
   "browserify": {
     "transform": [
-      ["babelify", { "stage": 0 }],
+      [
+        "babelify",
+        {
+          "stage": 0
+        }
+      ],
       "envify"
     ]
   },

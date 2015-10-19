@@ -13,5 +13,8 @@
 
 import React from 'react';
 import TodoApp from './components/TodoApp.react';
+import Beacon from './telemetry/beacon';
+
+Beacon.start();
 
 React.render(<TodoApp />, document.getElementById('todoapp'));
